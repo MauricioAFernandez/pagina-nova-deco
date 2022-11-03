@@ -1,348 +1,40 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #fff6ed;
-    font-style: italic;
+.contHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-/*---------------------------------ESTILOS DEL HEADER------------------------------------------*/
-
-.contHeader{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+.logoMenu {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin: 5px 5px 5px 20px;
 }
 
-.logoMenu{
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    margin: 5px 5px 5px 20px;
+.navBar {
+  display: flex;
+  flex-flow: nowrap;
+  gap: 25px;
+  padding: 20px;
+}
+.navBar li {
+  list-style: none;
+}
+.navBar li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
 
-.navBar{
-    display: flex;
-    flex-flow: nowrap;
-    gap: 25px;
-    padding: 20px;
+header {
+  background-color: #f5f5dc;
+  border: 1px solid gray;
 }
 
-.navBar li{
-    list-style: none;
-}
-
-.navBar li a{
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-}
-
-header, footer{
-    background-color: #f5f5dc;
-    border: 1px solid gray;
-}
-
-/*---------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------*/
-
-section{
-    text-align: center;
-    margin: 5px 0 5px 0;
-}
-
-.sectionIndex{
-    background-color: #ffbfbe;
-}
-
-.container-1{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-
-h1, h2, h3{
-    text-align: center;
-    margin: 10px;
-    padding: 5px;
-}
-
-/*------------------------------------TITULO_PRINCIPAL--------------------------------------*/
-
-.tituloP{
-    background-image: url(../assets/img/decoHome.jpg);
-    background-size: cover;
-    background-position-y: bottom;
-    text-align: end;
-    width: 100%;
-    height: 600px;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-}
-
-article{
-    margin: 20px;
-}
-
-.artDest{
-    background-color: #ffe5f0;
-    width: 600px;
-    height: 300px;
-    border: 1px solid lightgray;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
-    "item1Oferta item4Oferta"
-    "item2Oferta item4Oferta"
-    "item2Oferta item4Oferta"
-    "item3Oferta item4Oferta"
-    ;
-}
-
-.item1Oferta{
-    grid-area: item1Oferta;
-}
-.item2Oferta{
-    grid-area: item2Oferta;
-    padding-left: 45px;
-    padding-bottom: 30px;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.item3Oferta{
-    grid-area: item3Oferta;
-}
-.item4Oferta{
-    grid-area: item4Oferta;
-    align-self: center;
-}
-
-
-.artDest h3{
-    text-align: center;
-}
-
-.artDest img{
-    width: 260px;
-    height: 260px;
-}
-
-.artDest p{
-    font-size: 14px;
-    width: 250px;
-    text-align: justify;
-}
-
-.artVend{
-    background-color: #ffe5f0;
-    width: 400px;
-    height: 300px;
-    border: 1px solid lightgray;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
-    "item1Vend item1Vend item1Vend item1Vend item1Vend"
-    "item2Vend item2Vend item4Vend item4Vend item4Vend"
-    "item2Vend item2Vend item4Vend item4Vend item4Vend"
-    "item3Vend item3Vend item4Vend item4Vend item4Vend"
-    "item3Vend item3Vend item4Vend item4Vend item4Vend"
-    ;
-    gap: 5px;
-}
-
-.item1Vend{
-    grid-area: item1Vend;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-}
-.item2Vend{
-    grid-area: item2Vend;
-    display: flex;
-    flex-flow: column wrap;
-    justify-self: center;
-    align-self: flex-start;
-    row-gap: 10px;
-}
-.item3Vend{
-    grid-area: item3Vend;
-    display: flex;
-    flex-flow: column wrap;
-    justify-items: center;
-    align-items: center;
-}
-.item4Vend{
-    grid-area: item4Vend;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-}
-
-
-
-
-.artVend h3{
-    text-align: center;
-}
-
-.artVend img{
-    width: 200px;
-    height: 200px;
-}
-
-.artVend p{
-    font-size: 14px;
-    width: 100px;
-    text-align: justify;
-}
-
-.cardTienda{
-    background-color: #ffe5f0;
-    width: 240px;
-    height: 320px;
-    border: 1px solid lightgray;
-    margin: 10px;
-}
-
-.cardTienda h3{
-    text-align: center;
-}
-
-.cardTienda img{
-    width: 160px;
-    height: 160px;
-}
-
-.cardTienda p{
-    font-size: 14px;
-    width: 100px;
-    text-align: justify;
-}
-
-.artPublic{
-    background-color: #ffe5f0;
-    width: 260px;
-    height: 260px;
-    border: 1px solid lightgray;
-}
-
-.artPublic h3{
-    text-align: center;
-}
-
-.artPublic img{
-    width: 220px;
-    height: 180px;
-}
-
-button{
-    width: 100px;
-    height: 35px;
-    background-color: silver;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-.artUs{
-    background-color: #ffe5f0;
-    width: 575px;
-    height: 700px;
-    border: 1px solid lightgray;
-}
-
-.artUs h2{
-    text-align: center;
-    font-size: 20px;
-    margin: 5px;
-    padding: 3px;
-}
-
-.artUs img{
-    width: 400px;
-    height: 400px;
-    margin: 10px;
-    padding: 20px;
-}
-
-.artUs p{
-    font-size: 14px;
-    width: 400px;
-    text-align: justify;
-    margin: 15px 25px 15px 25px;
-}
-
-aside div{
-    margin: 15px;
-    font-weight: bold;
-}
-
-aside h5{
-    font-size: 16px;
-    text-decoration: underline;
-}
-
-.formConsulta{
-    background-color: #ffe5f0;
-    width: 540px;
-    height: 510px;
-}
-
-.cardMedio{
-    background-color: #ffe5f0;
-    width: 180px;
-    height: 180px;
-    margin: 20px;
-    text-align: center;
-}
-
-.cardMedio img{
-    width: 90px;
-    height: 90px;
-    margin: 10px;
-}
-
-
-
-.logoPie{
-    width: 80px;
-    height: 80px;
-    border-radius: 4px;
-    margin: 5px;
-}
-
-
-.conteiner-Foot{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    gap: 45px;
-    align-items: center;
-}
-
-.colFoot{
-    width: max-content;
-    margin: 15px;
-    padding: 5px;
-}
-.titFoot{
-    font-size: 18px;
-    font-weight: bold;
-}
-.lettFoot{
-    font-size: 15px;
-}
-
-.social{
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 10px;
-}
+/*# sourceMappingURL=style.css.map */
