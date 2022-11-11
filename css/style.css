@@ -4,10 +4,17 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3 {
+  font-style: italic;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+}
+
 .contHeader {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .logoMenu {
@@ -35,6 +42,197 @@
 header {
   background-color: #f5f5dc;
   border: 1px solid gray;
+}
+
+.tituloP {
+  background-image: url(../assets/img/decoHome.jpg);
+  background-size: cover;
+  background-position-y: bottom;
+  text-align: end;
+  width: 100%;
+  height: 45vw;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+  margin: 5px 0 5px 0;
+}
+
+.sectionIndex {
+  background-color: #ffbfbe;
+}
+
+.container-1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+article {
+  margin: 20px;
+}
+
+/*-------------SECCION DESTACADOS--------------*/
+.artDest {
+  background-color: #ffe5f0;
+  width: 600px;
+  height: 300px;
+  border: 1px solid lightgray;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "item1Oferta item4Oferta" "item2Oferta item4Oferta" "item2Oferta item4Oferta" "item3Oferta item4Oferta";
+}
+.artDest h3 {
+  text-align: center;
+}
+.artDest img {
+  width: 260px;
+  height: 260px;
+}
+.artDest p {
+  font-size: 14px;
+  width: 250px;
+  text-align: justify;
+}
+
+.item1Oferta {
+  grid-area: item1Oferta;
+}
+
+.item2Oferta {
+  grid-area: item2Oferta;
+  padding-left: 45px;
+  padding-bottom: 30px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item3Oferta {
+  grid-area: item3Oferta;
+}
+
+.item4Oferta {
+  grid-area: item4Oferta;
+  align-self: center;
+}
+
+/*-------------SECCION MAS VENDIDOS--------------*/
+.artVend {
+  background-color: #ffe5f0;
+  width: 400px;
+  height: 300px;
+  border: 1px solid lightgray;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "item1Vend item1Vend item1Vend item1Vend item1Vend" "item2Vend item2Vend item4Vend item4Vend item4Vend" "item2Vend item2Vend item4Vend item4Vend item4Vend" "item3Vend item3Vend item4Vend item4Vend item4Vend" "item3Vend item3Vend item4Vend item4Vend item4Vend";
+  gap: 5px;
+}
+.artVend h3 {
+  text-align: center;
+}
+.artVend img {
+  width: 200px;
+  height: 200px;
+}
+.artVend p {
+  font-size: 14px;
+  width: 100px;
+  text-align: justify;
+}
+
+.item1Vend {
+  grid-area: item1Vend;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.item2Vend {
+  grid-area: item2Vend;
+  display: flex;
+  flex-flow: column wrap;
+  justify-self: center;
+  align-self: flex-start;
+  row-gap: 10px;
+}
+
+.item3Vend {
+  grid-area: item3Vend;
+  display: flex;
+  flex-flow: column wrap;
+  justify-items: center;
+  align-items: center;
+}
+
+.item4Vend {
+  grid-area: item4Vend;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+footer {
+  background-color: #f5f5dc;
+  border: 1px solid gray;
+}
+footer div nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer div nav ul li a:hover {
+  background-color: grey;
+}
+
+.logoPie {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.conteiner-Foot {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 45px;
+  align-items: flex-start;
+}
+
+.colFoot {
+  width: max-content;
+  margin: 15px;
+  padding: 5px;
+}
+
+.titFoot {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.lettFoot {
+  font-size: 15px;
+}
+
+.social {
+  display: flex;
+  flex-flow: row nowrap;
+  height: fit-content;
+  gap: 10px;
+}
+.social img {
+  width: 20px;
+  height: 20px;
+}
+.social .lettFoot {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

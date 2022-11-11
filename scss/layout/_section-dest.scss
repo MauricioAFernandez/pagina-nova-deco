@@ -1,0 +1,135 @@
+section{
+    text-align: center;
+    margin: 5px 0 5px 0;
+}
+
+.sectionIndex{
+    background-color: #ffbfbe;
+}
+
+.container-1{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+
+article{
+    margin: 20px;
+}
+
+/*-------------SECCION DESTACADOS--------------*/
+
+.artDest{
+    background-color: #ffe5f0;
+    width: 600px;
+    height: 300px;
+    border: 1px solid lightgray;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "item1Oferta item4Oferta"
+    "item2Oferta item4Oferta"
+    "item2Oferta item4Oferta"
+    "item3Oferta item4Oferta"
+    ;
+    h3{
+        text-align: center;
+    }
+    img{
+        width: 260px;
+        height: 260px;
+    }
+    p{
+        font-size: 14px;
+        width: 250px;
+        text-align: justify;
+    }
+}
+
+.item1Oferta{
+    grid-area: item1Oferta;
+}
+.item2Oferta{
+    grid-area: item2Oferta;
+    padding-left: 45px;
+    padding-bottom: 30px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.item3Oferta{
+    grid-area: item3Oferta;
+}
+.item4Oferta{
+    grid-area: item4Oferta;
+    align-self: center;
+}
+
+/*-------------SECCION MAS VENDIDOS--------------*/
+
+.artVend{
+    background-color: #ffe5f0;
+    width: 400px;
+    height: 300px;
+    border: 1px solid lightgray;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "item1Vend item1Vend item1Vend item1Vend item1Vend"
+    "item2Vend item2Vend item4Vend item4Vend item4Vend"
+    "item2Vend item2Vend item4Vend item4Vend item4Vend"
+    "item3Vend item3Vend item4Vend item4Vend item4Vend"
+    "item3Vend item3Vend item4Vend item4Vend item4Vend"
+    ;
+    gap: 5px;
+    h3{
+        text-align: center;
+    }
+    
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    p{
+        font-size: 14px;
+        width: 100px;
+        text-align: justify;
+    }
+    
+}
+
+.item1Vend{
+    grid-area: item1Vend;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+.item2Vend{
+    grid-area: item2Vend;
+    display: flex;
+    flex-flow: column wrap;
+    justify-self: center;
+    align-self: flex-start;
+    row-gap: 10px;
+}
+.item3Vend{
+    grid-area: item3Vend;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+}
+.item4Vend{
+    grid-area: item4Vend;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+

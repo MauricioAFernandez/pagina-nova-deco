@@ -1,0 +1,62 @@
+footer{
+    background-color: #f5f5dc;
+    border: 1px solid gray;
+    div{
+        nav{
+            ul{
+                li{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        &:hover{
+                            background-color: grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.logoPie{
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+
+.conteiner-Foot{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 45px;
+    align-items: flex-start;
+}
+
+.colFoot{
+    width: max-content;
+    margin: 15px;
+    padding: 5px;
+}
+.titFoot{
+    font-size: 18px;
+    font-weight: bold;
+}
+.lettFoot{
+    font-size: 15px;
+}
+
+.social{
+    display: flex;
+    flex-flow: row nowrap;
+    height: fit-content;
+    gap: 10px;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    .lettFoot{
+        margin-bottom: 0;
+    }
+}
