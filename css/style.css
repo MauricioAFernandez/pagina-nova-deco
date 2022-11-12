@@ -11,6 +11,14 @@ h1, h2, h3 {
   padding: 5px;
 }
 
+button {
+  width: 100px;
+  height: 35px;
+  background-color: silver;
+  border-radius: 5px;
+  margin: 5px;
+}
+
 .contHeader {
   display: flex;
   justify-content: space-between;
@@ -202,6 +210,103 @@ article {
   display: flex;
   justify-self: center;
   align-self: center;
+}
+
+.cardTienda {
+  background-color: #ffe5f0;
+  width: 240px;
+  height: 320px;
+  border: 1px solid lightgray;
+  margin: 10px;
+}
+
+.cardTienda h3 {
+  text-align: center;
+}
+
+.cardTienda img {
+  width: 160px;
+  height: 160px;
+}
+
+.cardTienda p {
+  font-size: 14px;
+  width: 100px;
+  text-align: justify;
+}
+
+aside div {
+  margin: 15px;
+  font-weight: bold;
+}
+
+aside h5 {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.artPublic {
+  background-color: #ffe5f0;
+  width: 260px;
+  height: 260px;
+  border: 1px solid lightgray;
+}
+
+.artPublic h3 {
+  text-align: center;
+}
+
+.artPublic img {
+  width: 220px;
+  height: 180px;
+}
+
+.artUs {
+  background-color: #ffe5f0;
+  width: 575px;
+  height: 700px;
+  border: 1px solid lightgray;
+}
+
+.artUs h2 {
+  text-align: center;
+  font-size: 20px;
+  margin: 5px;
+  padding: 3px;
+}
+
+.artUs img {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.artUs p {
+  font-size: 14px;
+  width: 400px;
+  text-align: justify;
+  margin: 15px 25px 15px 25px;
+}
+
+.formConsulta {
+  background-color: #ffe5f0;
+  width: 540px;
+  height: 510px;
+}
+
+.cardMedio {
+  background-color: #ffe5f0;
+  width: 180px;
+  height: 180px;
+  margin: 20px;
+  text-align: center;
+}
+
+.cardMedio img {
+  width: 90px;
+  height: 90px;
+  margin: 10px;
 }
 
 footer {

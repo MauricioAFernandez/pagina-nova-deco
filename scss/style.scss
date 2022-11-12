@@ -1,7 +1,15 @@
 @import "./base/reset";
 @import "./components/titles";
+@import "./components/buttons";
 @import "./layout/header";
 @import "./layout/titulo-principal";
 @import "./layout/section-dest";
+
+
+@import "./layout/tienda";
+@import "./layout/publicaciones";
+@import "./layout/nosotros";
+@import "./layout/contacto";
+
 
 @import "./layout/footer";
