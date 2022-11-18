@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactanos por cualquier consulta. Atención las 24hs">
+    <meta name="author" content="Mauricio Fernandez">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Nova Design Deco</title>
+    <title>Medios de contacto | Nova Design Deco</title>
+    <link rel="shortcut icon" href="../assets/logos/logoNova.jpg" type="image/x-icon">
 </head>
 <body>
     <header class="container-fluid contHeader">
@@ -47,83 +50,84 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="container-fluid conteinerPpal">
         <h1>CONTACTANOS</h1>
-        <section>
-            <div class="formConsulta">
-                <h2>DEJA TU CONSULTA</h2>
-                <form action="" method="post">
-                    <fieldset>
-                        <span>Nombre:</span>
-                        <input type="text" name="nombre">
-                        <br>
-                        <span>E-mail:</span>
-                        <input type="e-mail" name="correo">
-                        <br>
-                        <textarea name="consulta" id="consCliente" cols="30" rows="10" placeholder="Escribe aqui tu consulta"></textarea>
-                        <br>
-                        <input type="submit">
-                    </fieldset>
-                </form>
-            </div>
-        </section>
-        <section>
-            <h2>NUESTROS MEDIOS DE COMUNICACION</h2>
-            <div>
-                <div class="cardMedio">
-                    <img src="../assets/logos/logoTel.png" alt="logoTel">
-                    <p>TEL +5491132926667</p>
+        <div class="container-fluid container-contacto">
+            <section>
+                <div class="formConsulta">
+                    <h2>DEJA TU CONSULTA</h2>
+                    <form action="" method="post">
+                        <fieldset>
+                            <span class="item1-form">Nombre:</span>
+                            <input type="text" name="nombre" class="item2-form">
+                            <span class="item3-form">E-mail:</span>
+                            <input type="e-mail" name="correo" class="item4-form">
+                            <textarea name="consulta" id="consCliente" cols="30" rows="10" placeholder="Escribe aqui tu consulta" class="item5-form"></textarea>
+                            <input type="submit" class="item6-form">
+                        </fieldset>
+                    </form>
                 </div>
-                <div class="cardMedio">
-                    <img src="../assets/logos/logoWsp.png" alt="logoWsp">
-                    <p>WSP 11-32926667</p>
+            </section>
+            <section>
+                <h2>NUESTROS MEDIOS DE COMUNICACION</h2>
+                <div class="container-fluid container-medios">
+                    <div class="cardMedio cardMedio1">
+                        <img src="../assets/logos/logoTel.png" alt="logoTel">
+                        <p>TEL +5491132926667</p>
+                    </div>
+                    <div class="cardMedio cardMedio2">
+                        <img src="../assets/logos/logoWsp.png" alt="logoWsp">
+                        <p>WSP 11-32926667</p>
+                    </div>
+                    <div class="cardMedio cardMedio3">
+                        <img src="../assets/logos/logoFace.jpeg" alt="logoFace">
+                        <p>novadesigndeco</p>
+                    </div>
+                    <div class="cardMedio cardMedio4">
+                        <img src="../assets/logos/logoInsta.jpeg" alt="logoInst">
+                        <p>@novadesigndeco</p>
+                    </div>
                 </div>
-                <div class="cardMedio">
-                    <img src="../assets/logos/logoFace.jpeg" alt="logoFace">
-                    <p>novadesigndeco</p>
-                </div>
-                <div class="cardMedio">
-                    <img src="../assets/logos/logoInsta.jpeg" alt="logoInst">
-                    <p>@novadesigndeco</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
-    <footer>
+
+
+        <footer class="conteiner-Foot">
         <div>
             <img src="../assets/logos/logoNova.jpg" alt="logoFoot" class="logoPie">
         </div>
-        <div>
-            <h4>Sobre Nosotros</h4>
+        <div class="colFoot">
+            <h4 class="titFoot">Sobre Nosotros</h4>
             <nav>
-                <ul class="navBar">
-                    <li><a href="../pages/nosotros.html">Quienes somos</a></li>
-                    <li><p>Estomba 331 11 F, Bahia Blanca, Argentina</p></li>
+                <ul class="navBar-foot">
+                    <li><a href="../pages/nosotros.html"  class="lettFoot">Quienes somos</a></li>
+                    <li><p class="lettFoot">Estomba 331 11 F, Bahia Blanca, Argentina</p></li>
                 </ul>
             </nav>
         </div>
-        <div>
-            <h4>Ayuda</h4>
-            <nav class="navBar">
+        <div class="colFoot">
+            <h4 class="titFoot">Ayuda</h4>
+            <nav class="navBar-foot">
                 <ul>
-                    <li><a href="">Preguntas frecuentes</a></li>
-                    <li><a href="">Medios de Pago</a></li>
+                    <li><a href="" class="lettFoot">Preguntas frecuentes</a></li>
+                    <li><a href="" class="lettFoot">Medios de Pago</a></li>
                 </ul>
             </nav>
         </div>
-        <div>
-            <h4>Contactanos</h4>
-            <ul class="navBar">
-                <li>Cel. +5491132926667</li>
-                <li>Wsp. +5491132926667</li>
+        <div class="colFoot">
+            <h4 class="titFoot">Contactanos</h4>
+            <ul class="navBar-foot">
+                <li  class="lettFoot">Cel. +5491132926667</li>
+                <li  class="lettFoot">Wsp. +5491132926667</li>
             </ul>
         </div>
-        <div>
-            <h4>Redes Sociales</h4>
+        <div class="colFoot">
+            <h4 class="titFoot">Redes Sociales</h4>
             <nav>
-                <ul class="navBar">
-                    <li><a href="https://www.facebook.com/NovaDesignDeco"><img src="../assets/logos/facePie.png" alt="logoFace"><p>novadesigndeco</p></a></li>
-                    <li><a href="https://www.instagram.com/novadesigndeco"><img src="../assets/logos/instaPie.png" alt="logoIg"><p>novadesigndeco</p></a></li>
+                <ul class="navBar-foot">
+                    <li><a href="https://www.facebook.com/NovaDesignDeco" class="social"><img src="../assets/logos/facePie.png" alt="logoFace"><p class="lettFoot">novadesigndeco</p></a></li>
+                    <li><a href="https://www.instagram.com/novadesigndeco" class="social"><img src="../assets/logos/instaPie.png" alt="logoIg"><p class="lettFoot">novadesigndeco</p></a></li>
                 </ul>
             </nav>
         </div>

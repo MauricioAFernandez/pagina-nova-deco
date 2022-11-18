@@ -1,8 +1,12 @@
 .artUs{
     background-color: #ffe5f0;
-    width: 575px;
-    height: 700px;
+    width: 90%;
+    height: 1auto;
+    font-size: 0.6rem;
     border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .artUs h2{
@@ -13,15 +17,32 @@
 }
 
 .artUs img{
-    width: 400px;
-    height: 400px;
-    margin: 10px;
-    padding: 20px;
+    width: 85%;
+    margin: 0.5rem;
+    padding: 1rem;
 }
 
 .artUs p{
-    font-size: 14px;
-    width: 400px;
+    font-size: 0.6rem;
+    width: 80%;
     text-align: justify;
     margin: 15px 25px 15px 25px;
+}
+
+@media screen and (min-width: 576px) {
+    .artUs{
+        width: 45%;
+        p{
+            font-size: 0.6rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .artUs{
+        width: 45%;
+        p{
+            font-size: 0.9rem;
+        }
+    }
 }

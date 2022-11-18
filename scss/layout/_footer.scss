@@ -35,16 +35,16 @@ footer{
 }
 
 .colFoot{
-    width: max-content;
-    margin: 15px;
-    padding: 5px;
+    width: 370px;
+    margin: 0.75rem;
+    padding: 0.3rem;
 }
 .titFoot{
-    font-size: 18px;
+    font-size: 0.75rem;
     font-weight: bold;
 }
 .lettFoot{
-    font-size: 15px;
+    font-size: 0.7rem;
 }
 
 .social{
@@ -53,10 +53,62 @@ footer{
     height: fit-content;
     gap: 10px;
     img{
-        width: 20px;
-        height: 20px;
+        width: 0.9rem;
+        height: 0.9rem;
     }
     .lettFoot{
         margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .colFoot{
+        width: max-content;
+        margin: 0.9rem;
+        padding: 0.4rem;
+    }
+    .titFoot{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .lettFoot{
+        font-size: 0.9rem;
+    }
+    
+    .social{
+        display: flex;
+        flex-flow: row nowrap;
+        height: fit-content;
+        gap: 10px;
+        img{
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .colFoot{
+        width: max-content;
+        margin: 0.9rem;
+        padding: 0.4rem;
+    }
+    .titFoot{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .lettFoot{
+        font-size: 0.9rem;
+    }
+    
+    .social{
+        display: flex;
+        flex-flow: row nowrap;
+        height: fit-content;
+        gap: 10px;
+        img{
+            width: 1rem;
+            height: 1rem;
+        }
     }
 }
