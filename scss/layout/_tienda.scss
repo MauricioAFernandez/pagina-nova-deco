@@ -1,32 +1,40 @@
+.conteiner-tienda{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 576px) {
+    .conteiner-tienda{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .conteiner-tienda{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
 .cardTienda{
     background-color: #ffe5f0;
     width: 240px;
     height: 320px;
     border: 1px solid lightgray;
     margin: 10px;
-}
-
-.cardTienda h3{
-    text-align: center;
-}
-
-.cardTienda img{
-    width: 160px;
-    height: 160px;
-}
-
-.cardTienda p{
-    font-size: 14px;
-    width: 100px;
-    text-align: justify;
-}
-
-aside div{
-    margin: 15px;
-    font-weight: bold;
-}
-
-aside h5{
-    font-size: 16px;
-    text-decoration: underline;
+    h3{
+        text-align: center;
+    }
+    img{
+        width: 160px;
+        height: 160px;
+    }
+    p{
+        font-size: 14px;
+        width: 100px;
+        text-align: justify;
+    } 
 }
